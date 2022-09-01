@@ -1,5 +1,5 @@
 .show-hide-bg-container {
-  background-image: liner-gradient(to right, #fa7257, #fc63a7);
+  background-image: linear-gradient(to right, #fa7257, #fc63a7);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,10 +32,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 25vw;
+  width: 50vw;
   margin-bottom: 1rem;
-  margin-left: 0;
-  margin-right: 0;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 }
 
 .show-hide-name-button {
@@ -45,6 +45,7 @@
   background-color: #ffffff;
   font-size: 1rem;
   margin-bottom: 1rem;
+  border: none;
 }
 
 .name-container {
@@ -61,8 +62,8 @@
 }
 
 @media (min-width: 768px) {
-  .show-hide-name-container {
-    width: 50vw;
+  .show-hide-single-name-container {
+    width: 20vw;
     margin-left: 1.5rem;
     margin-right: 1.5rem;
   }
