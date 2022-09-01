@@ -34,15 +34,13 @@ export default class ShowHide extends Component {
                 Show/Hide Firstname
               </button>
 
-              <div
-                className={
-                  showFirstName
-                    ? 'name-container'
-                    : 'name-container hide-container'
-                }
-              >
-                <p className="name-text">{showFirstName ? 'Joe' : '   '}</p>
-              </div>
+              {showFirstName ? (
+                <div className="name-container">
+                  <p className="name-text">Joe</p>
+                </div>
+              ) : (
+                <span />
+              )}
             </div>
 
             <div className="show-hide-single-name-container">
@@ -54,15 +52,13 @@ export default class ShowHide extends Component {
                 Show/Hide Lastname
               </button>
 
-              <div
-                className={
-                  showLastName
-                    ? 'name-container'
-                    : 'name-container hide-container'
-                }
-              >
-                <p className="name-text">{showLastName ? 'Jonas' : '    '}</p>
-              </div>
+              {showLastName ? (
+                <div className="name-container">
+                  <p className="name-text">Jonas</p>
+                </div>
+              ) : (
+                <span />
+              )}
             </div>
           </div>
         </div>
