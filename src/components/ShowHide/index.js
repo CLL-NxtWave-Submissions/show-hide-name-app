@@ -8,10 +8,14 @@ export default class ShowHide extends Component {
   }
 
   onShowHideFirstName = () =>
-    this.setState(previousShowHideState => !previousShowHideState.showFirstName)
+    this.setState(previousShowHideState => ({
+      showFirstName: !previousShowHideState.showFirstName,
+    }))
 
   onShowHideLastName = () =>
-    this.setState(previousShowHideState => !previousShowHideState.showLastName)
+    this.setState(previousShowHideState => ({
+      showLastName: !previousShowHideState.showLastName,
+    }))
 
   render() {
     const {showFirstName, showLastName} = this.state
@@ -29,13 +33,16 @@ export default class ShowHide extends Component {
               >
                 Show/Hide Firstname
               </button>
-              {showFirstName ? (
-                <div className="name-container">
-                  <p className="name-text">Joe</p>
-                </div>
-              ) : (
-                <span />
-              )}
+
+              <div
+                className={
+                  showFirstName
+                    ? 'name-container'
+                    : 'name-container hide-container'
+                }
+              >
+                <p className="name-text">{showFirstName ? 'Joe' : '   '}</p>
+              </div>
             </div>
 
             <div className="show-hide-single-name-container">
@@ -46,13 +53,16 @@ export default class ShowHide extends Component {
               >
                 Show/Hide Lastname
               </button>
-              {showLastName ? (
-                <div className="name-container">
-                  <p className="name-text">Jonas</p>
-                </div>
-              ) : (
-                <i />
-              )}
+
+              <div
+                className={
+                  showLastName
+                    ? 'name-container'
+                    : 'name-container hide-container'
+                }
+              >
+                <p className="name-text">{showLastName ? 'Jonas' : '    '}</p>
+              </div>
             </div>
           </div>
         </div>
