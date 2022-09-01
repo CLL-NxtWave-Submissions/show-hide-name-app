@@ -1,1 +1,63 @@
-/* Write your CSS here */
+.show-hide-bg-container {
+  background-image: liner-gradient(to right, #fa7257, #fc63a7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Roboto';
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-header {
+  color: #ffffff;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.show-hide-name-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 25vw;
+  margin-bottom: 1rem;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.show-hide-name-button {
+  color: #dd1264;
+  padding: 0.7rem 1.2rem;
+  border-radius: 0.6rem;
+  background-color: #ffffff;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.name-container {
+  background-color: #fddddb;
+  border-radius: 0.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+}
+
+.name-text {
+  font-size: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .show-hide-name-container {
+    width: 50vw;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+}
