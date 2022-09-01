@@ -41,7 +41,7 @@
 .show-hide-name-button {
   color: #dd1264;
   padding: 0.7rem 1.2rem;
-  border-radius: 0.6rem;
+  border-radius: 0.4rem;
   background-color: #ffffff;
   font-size: 1rem;
   margin-bottom: 1.5rem;
@@ -96,7 +96,7 @@
 
 @media (min-width: 900px) {
   .show-hide-single-name-container {
-    width: 30vw;
+    width: 26vw;
     margin-left: 1.5rem;
     margin-right: 1.5rem;
   }
@@ -104,7 +104,15 @@
 
 @media (min-width: 1100px) {
   .show-hide-single-name-container {
-    width: 27vw;
+    width: 23vw;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .show-hide-single-name-container {
+    width: 16vw;
     margin-left: 1.5rem;
     margin-right: 1.5rem;
   }
